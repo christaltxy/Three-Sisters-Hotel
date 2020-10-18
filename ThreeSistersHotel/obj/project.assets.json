@@ -8955,20 +8955,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {}
+    "C:\\Users\\hamza\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\Desktop\\Three Sisters Hotel\\ThreeSistersHotel\\ThreeSistersHotel.csproj",
+      "projectUniqueName": "C:\\Users\\hamza\\Documents\\GitHub\\Three-Sisters-Hotel\\ThreeSistersHotel\\ThreeSistersHotel.csproj",
       "projectName": "ThreeSistersHotel",
-      "projectPath": "C:\\Users\\chris\\Desktop\\Three Sisters Hotel\\ThreeSistersHotel\\ThreeSistersHotel.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\Desktop\\Three Sisters Hotel\\ThreeSistersHotel\\obj\\",
+      "projectPath": "C:\\Users\\hamza\\Documents\\GitHub\\Three-Sisters-Hotel\\ThreeSistersHotel\\ThreeSistersHotel.csproj",
+      "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hamza\\Documents\\GitHub\\Three-Sisters-Hotel\\ThreeSistersHotel\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9038,7 +9043,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
