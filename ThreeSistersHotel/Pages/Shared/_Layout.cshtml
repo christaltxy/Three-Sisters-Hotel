@@ -25,8 +25,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        @if (User.IsInRole("Customer"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Customers/MyDetails">My Details</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        { 
+                           <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Bookings/">My Details</a>
+                           </li>
                         
-                    </ul>
+                        }
+                            
+
+
+                        </ul>
                 </div>
             </div>
         </nav>
