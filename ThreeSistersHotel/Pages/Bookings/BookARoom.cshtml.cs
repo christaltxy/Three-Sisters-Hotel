@@ -13,9 +13,9 @@ namespace ThreeSistersHotel.Pages.Bookings
 {
     public class BookARoomModel : PageModel
     {
-        private readonly ThreeSistersHotel.Data.ThreeSistersHotelContext _context;
+        private readonly ThreeSistersHotel.Data.ApplicationDbContext _context;
 
-        public BookARoomModel(ThreeSistersHotel.Data.ThreeSistersHotelContext context)
+        public BookARoomModel(ThreeSistersHotel.Data.ApplicationDbContext context)
         {
             _context = context;
         }
