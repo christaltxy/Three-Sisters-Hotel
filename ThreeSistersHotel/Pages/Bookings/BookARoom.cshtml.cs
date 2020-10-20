@@ -35,7 +35,7 @@ namespace ThreeSistersHotel.Pages.Bookings
         {
             // Get the options for the Customer select list from the database
             // and save them in ViewData for passing to Content file
-            ViewData["BookingList"] = new SelectList(_context.Customer, "Email", "Surname", "GivenName");
+            ViewData["BookingList"] = new SelectList(_context.Room, "Email", "Surname", "GivenName");
             return Page();
         }
 
@@ -52,7 +52,7 @@ namespace ThreeSistersHotel.Pages.Bookings
             DiffBookings = await diffBookings.ToListAsync();
 
             // Save the options for both dropdown lists in ViewData for passing to content file
-            ViewData["BookingList"] = new SelectList(_context.Customer, "Email", "Surname", "GivenName");
+            ViewData["BookingList"] = new SelectList(_context.Room, "Email", "Surname", "GivenName");
             // invoke the content file
 
             return Page();
