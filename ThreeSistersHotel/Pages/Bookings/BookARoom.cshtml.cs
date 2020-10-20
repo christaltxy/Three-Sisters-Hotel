@@ -19,21 +19,43 @@ namespace ThreeSistersHotel.Pages.Bookings
         {
             _context = context;
         }
-        public BookingViewModel Booking { get; set; }
+
+        [BindProperty]
+        // need 'using <ProjectName>.Models'
+        public BookingViewModel CustomersInput { get; set; }
+
+        // List of different bookings; for passing to Content file to display
+        public IList<Room> DiffBookings { get; set; }
+
+        //public BookingViewModel Booking { get; set; }
+
+        // GET: Customers/BookARoom
 
         public IActionResult OnGet()
         {
-            // Get the options for the MovieGoer select list from the database
+            // Get the options for the Customer select list from the database
             // and save them in ViewData for passing to Content file
-          //  ViewData["Booking"] = new SelectList(_context.Booking, "CheckIn", "CheckOut");
+            ViewData["BookingList"] = new SelectList(_context.Customer, "Email", "Surname", "GivenName");
             return Page();
         }
 
-       /* public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync()
         {
+            // prepare the parameters to be inserted into the query
+            var emailA = new SqliteParameter("personA", CustomersInput.CustomerA);
 
+            var diffBookings = _context.Room.FromSqlRaw("select [Room].* from [Room] inner join [Booking] on "
+                             + "[Room].ID = [Booking].MovieID where [Booking].MovieGoerEmail = @emailA and "
+                             + "[Room].ID not in (select [Room].* from [Room] inner join [Booking] on [Room].ID = [Booking].MovieID)", emailA);
 
+            // Run the query and save the results in DiffBookings for passing to content file
+            DiffBookings = await diffBookings.ToListAsync();
+
+            // Save the options for both dropdown lists in ViewData for passing to content file
+            ViewData["BookingList"] = new SelectList(_context.Customer, "Email", "Surname", "GivenName");
+            // invoke the content file
+
+            return Page();
         }
-        */
     }
 }
