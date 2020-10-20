@@ -14,13 +14,17 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Booking[0].CheckIn)
+                <a asp-page="Index" asp-route-sortorder="@ViewData["NextCheckInOrder"]">
+                    @Html.DisplayNameFor(model => model.Booking[0].CheckIn)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Booking[0].CheckOut)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Booking[0].Cost)
+                <a asp-page="Index" asp-route-sortorder="@ViewData["NextCostOrder"]">
+                    @Html.DisplayNameFor(model => model.Booking[0].Cost)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Booking[0].TheRoom)

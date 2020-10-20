@@ -25,14 +25,15 @@ namespace ThreeSistersHotel.Pages.Bookings
         {
             // Get the options for the MovieGoer select list from the database
             // and save them in ViewData for passing to Content file
-            ViewData["Booking"] = new SelectList(_context.Booking, "CheckIn", "CheckOut");
+          //  ViewData["Booking"] = new SelectList(_context.Booking, "CheckIn", "CheckOut");
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+       /* public async Task<IActionResult> OnPostAsync()
         {
 
 
         }
+        */
     }
 }

@@ -427,3 +427,4 @@ C:\Users\hamza\Documents\GitHub\Three-Sisters-Hotel\ThreeSistersHotel\obj\Debug\
 C:\Users\hamza\Documents\GitHub\Three-Sisters-Hotel\ThreeSistersHotel\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\hamza\Documents\GitHub\Three-Sisters-Hotel\ThreeSistersHotel\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\hamza\Documents\GitHub\Three-Sisters-Hotel\ThreeSistersHotel\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\hamza\Documents\GitHub\Three-Sisters-Hotel\ThreeSistersHotel\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\BookARoom.cshtml.g.cs
